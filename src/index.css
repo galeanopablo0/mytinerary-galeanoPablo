@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+*{
+  padding: 0; 
+  margin: 0;
+  box-sizing: border-box;
+  transition: linear .2s;
+}
+
+html{
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+  background-color: #09090b;
+}
+
+html::-webkit-scrollbar{
+  width: 0.6rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background-color: #252525;
+  border-radius: 5rem;
+}
+
+:root {
+  font-family: 'Open Sans', sans-serif;
+  color: #171717;
+  --tw-bg-opacity: 1;
+    background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+
