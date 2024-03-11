@@ -10,6 +10,21 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cities" element={<Cities />} />
+            <Route path="/whatsapp" Component={() => {
+              window.location.replace('https://whatsapp.com')
+            }}/>
+            <Route path="/facebook" Component={() => {
+              window.location.replace('https://facebook.com')
+            }}/>
+            <Route path="/instagram" Component={() => {
+              window.location.replace('https://instagram.com')
+            }}/>
+            <Route path="/twitter" Component={() => {
+              window.location.replace('https://twitter.com')
+            }}/>
+            <Route path="/gmail" Component={() => {
+              window.location.replace('https://gmail.com')
+            }}/>
           </Routes>
         </LayoutMain>
       </BrowserRouter>
