@@ -19,7 +19,7 @@ const Cities = () => {
     }
 
     const handleInput = () => {
-      let filtered = filterByName(ciudades, inputBusqueda.current.value);
+      let filtered = filterByName(ciudades, inputBusqueda.current.value.trim());
       setFiltradas(filtered);
     }
 
