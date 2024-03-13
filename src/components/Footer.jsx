@@ -5,6 +5,10 @@ const Footer = () => {
   return (
     <>
         <footer className='flex flex-col items-center gap-5 p-9 border-t-2 border-black'>
+            <nav className='p-1 flex gap-10'>
+                <Link className='text-xl hover:scale-95 text-black hover:text-gray-600 hover:bg-slate-200 p-2 px-8 border border-black' to="/">Home</Link>
+                <Link className='text-xl hover:scale-95 text-black hover:text-gray-600 hover:bg-slate-200 p-2 px-8 border border-black' to="/cities">Cities</Link>
+            </nav>
             <nav className='flex flex-wrap justify-center gap-10'>
               <Link to="/whatsapp"><i className='fa-brands fa-whatsapp scale-150 pr-[5px]'></i>Whatsapp</Link>
               <Link to="/instagram"><i className='fa-brands fa-instagram scale-150 pr-[5px]'></i>Instagram</Link>

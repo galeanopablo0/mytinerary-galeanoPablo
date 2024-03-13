@@ -27,13 +27,13 @@ const Carrousel = () => {
           </div>
           <div className="flex flex-wrap gap-8 justify-center">
             {citiesSlides.map((city) => (
-              <article className="w-[230px] sm:w-[230px] md:w-[290px] h-[120px] md:h-[200px] lg:w-[400px] xl:w-[520px] relative">
+              <article key={city._id} className="w-[230px] sm:w-[230px] md:w-[290px] h-[120px] md:h-[200px] lg:w-[400px] xl:w-[520px] relative hover:scale-105">
               <img
-                className="w-full xl:w-11/12 h-full m-auto object-cover"
+                className="w-full h-full m-auto object-cover"
                 src={city.image}
-                alt={"Imagen de: " + city.image}
+                alt={"Imagen de: " + city.name}
               />
-              <footer className="w-full xl:w-11/12 p-1 absolute bottom-0 left-0 right-0 m-auto text-white bg-gray-800/60">
+              <footer className="w-full p-1 absolute bottom-0 left-0 right-0 m-auto text-white bg-gray-800/60">
                 <h2 className="sm:text-lg md:text-2xl lg:text-3xl font-bold">{city.name}</h2>
                 <h3 className="sm:text-sm md:text-xl lg:text-2xl italic">{city.country}</h3>
               </footer>

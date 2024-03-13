@@ -37,4 +37,6 @@ html::-webkit-scrollbar-thumb{
     background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
-
+.text-stroke-2 {
+  -webkit-text-stroke: 2px black;
+}

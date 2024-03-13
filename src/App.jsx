@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Home from "./views/Home"
 import Cities from "./views/Cities"
 import LayoutMain from "./components/LayoutMain"
+import City from "./views/City"
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cities" element={<Cities />} />
+            <Route path="/cities/:id" element={<City />} />
+
             <Route path="/whatsapp" Component={() => {
               window.location.replace('https://whatsapp.com')
             }}/>
