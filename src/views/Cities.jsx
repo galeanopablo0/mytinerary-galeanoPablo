@@ -36,7 +36,7 @@ const Cities = () => {
             <input
             placeholder='Insert city name'
             type="text" 
-            className='border border-black p-1 w-[40%] md:w-[30%] lg:w-[20%]'
+            className='border border-black bg-gray-100 p-1 w-[40%] md:w-[30%] lg:w-[20%]'
             onInput={handleInput}
             ref={inputBusqueda}
             />

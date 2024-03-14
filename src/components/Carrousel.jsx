@@ -26,8 +26,8 @@ const Carrousel = () => {
             <button className="flex p-3 bg-slate-400/80" onClick={prev}>◀</button>
           </div>
           <div className="flex flex-wrap gap-8 justify-center">
-            {citiesSlides.map((city) => (
-              <article key={city._id} className="w-[230px] sm:w-[230px] md:w-[290px] h-[120px] md:h-[200px] lg:w-[400px] xl:w-[520px] relative hover:scale-105">
+            {citiesSlides.map((city, index) => (
+              <article key={`${city._id}_${index}`} className="w-[230px] sm:w-[230px] md:w-[290px] h-[120px] md:h-[200px] lg:w-[400px] xl:w-[520px] relative hover:scale-105">
               <img
                 className="w-full h-full m-auto object-cover"
                 src={city.image}

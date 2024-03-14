@@ -6,15 +6,15 @@ const Footer = () => {
     <>
         <footer className='flex flex-col items-center gap-5 p-9 border-t-2 border-black'>
             <nav className='p-1 flex gap-10'>
-                <Link className='text-xl hover:scale-95 text-black hover:text-gray-600 hover:bg-slate-200 p-2 px-8 border border-black' to="/">Home</Link>
-                <Link className='text-xl hover:scale-95 text-black hover:text-gray-600 hover:bg-slate-200 p-2 px-8 border border-black' to="/cities">Cities</Link>
+                <Link className='text-xl hover:scale-95 text-black hover:text-gray-600 hover:bg-orange-400 p-2 px-8 border border-black' to="/">Home</Link>
+                <Link className='text-xl hover:scale-95 text-black hover:text-gray-600 hover:bg-orange-400 p-2 px-8 border border-black' to="/cities">Cities</Link>
             </nav>
             <nav className='flex flex-wrap justify-center gap-10'>
-              <Link to="/whatsapp"><i className='fa-brands fa-whatsapp scale-150 pr-[5px]'></i>Whatsapp</Link>
-              <Link to="/instagram"><i className='fa-brands fa-instagram scale-150 pr-[5px]'></i>Instagram</Link>
-              <Link to="/facebook"><i className='fa-brands fa-facebook scale-150 pr-[5px]'></i>Facebook</Link>
-              <Link to="/twitter"><i className='fa-brands fa-twitter scale-150 pr-[5px]'></i>Twitter</Link>
-              <Link to="/gmail"><i className='fa-brands fa-google scale-150 pr-[5px]'></i>Gmail</Link>
+              <a target='_blank' href="https://whatsapp.com"><i className='fa-brands fa-whatsapp scale-150 pr-[5px]'></i>Whatsapp</a>
+              <a target='_blank' href="https://instagram.com"><i className='fa-brands fa-instagram scale-150 pr-[5px]'></i>Instagram</a>
+              <a target='_blank' href="https://facebook.com"><i className='fa-brands fa-facebook scale-150 pr-[5px]'></i>Facebook</a>
+              <a target='_blank' href="https://twitter.com"><i className='fa-brands fa-twitter scale-150 pr-[5px]'></i>Twitter</a>
+              <a target='_blank' href="https://gmail.com"><i className='fa-brands fa-google scale-150 pr-[5px]'></i>Gmail</a>
             </nav>
             <p className='p-2'>Galeano Pablo - Mindhub B2B050 ©</p>
         </footer>
