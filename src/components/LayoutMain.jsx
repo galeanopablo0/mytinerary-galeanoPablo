@@ -6,9 +6,7 @@ const LayoutMain = ( {children} ) => {
   return (
     <>
         <Header />
-          <main className='flex flex-col grow'>
             {children}
-          </main>
         <Footer />
     </>
   )
