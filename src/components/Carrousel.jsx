@@ -23,7 +23,7 @@ const Carrousel = () => {
     <>
         <div className="flex items-center w-11/12 py-5 md:py-9 m-auto gap-5">
           <div>
-            <button className="flex p-3 bg-slate-400/80" onClick={prev}>◀</button>
+            <button className="flex p-3 bg-orange-400/80" onClick={prev}>◀</button>
           </div>
           <div className="flex flex-wrap gap-8 justify-center">
             {citiesSlides.map((city, index) => (
@@ -41,7 +41,7 @@ const Carrousel = () => {
             ))}
           </div>
           <div>
-            <button className="flex p-3 bg-slate-400/80" onClick={next}>▶</button>
+            <button className="flex p-3 bg-orange-400/80" onClick={next}>▶</button>
           </div>
         </div>
     </>
