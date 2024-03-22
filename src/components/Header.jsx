@@ -34,7 +34,7 @@ const Header = () => {
   return (
     <>
       <header className="flex justify-center border-b-2 border-b-black">
-        <div className="flex flex-col md:flex-row justify-center md:justify-around p-5 py- md:py-10 items-center w-[95%] sm:w-[80%]">
+        <div className="flex flex-col md:flex-row justify-center md:justify-between p-5 py- md:py-10 items-center w-[95%] sm:w-[80%]">
           <h1>
             <Link
               to={"/"}
