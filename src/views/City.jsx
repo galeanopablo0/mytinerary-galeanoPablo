@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import { getCityById } from '../services/citiesQueries'
-import Itinerarie from '../components/Itinerarie'
 
 const City = () => {
     const params = useParams()
@@ -32,7 +31,7 @@ const City = () => {
     function imprimirImageActivities(itinerarie) {
       let imagesElements = []
       for (let i = 0; i < itinerarie.length; i++) {
-        imagesElements.push(<img className='w-4/5 md:w-3/5 border border-orange-300 rounded hover:scale-[102%]' key={i} src={itinerarie[i]} />)
+        imagesElements.push(<img className='w-4/5 md:w-3/5 border border-gray-400 rounded hover:scale-[102%]' key={i} src={itinerarie[i]} />)
       }
       return imagesElements
     }
@@ -50,7 +49,7 @@ const City = () => {
             </div>
             <div className='flex flex-col items-center'>
               <legend className='text-md font-bold text-red-600'>Under construction</legend>
-              <Link to={'/cities'} className='text-xl hover:scale-95 text-black hover:text-gray-600 hover:bg-orange-400 p-2 px-8 border border-black'>Back to Cities</Link>
+              <Link to={'/cities'} className='text-xl hover:scale-95 text-black hover:text-gray-600 hover:bg-blue-300 p-2 px-8 border border-black'>Back to Cities</Link>
             </div>
             {itineraries.length > 0 ? ( // Verifica si hay itinerarios
               <div>
@@ -67,7 +66,7 @@ const City = () => {
                       </div>
                     </div>
                     <div>
-                      <div className='bg-orange-300 p-2 rounded'>
+                      <div className='bg-blue-300 p-2 rounded'>
                         <p><strong>Price:</strong> {imprimirBilletes(itinerarie.price)}</p>
                         <p><strong>Duration:</strong> {itinerarie.duration}hs</p>
                         <p><strong>Likes:</strong> 0</p>

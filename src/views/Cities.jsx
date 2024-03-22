@@ -29,9 +29,9 @@ const Cities = () => {
 
     if (filtered.length === 0){
       return (
-        <main className='flex flex-col grow pb-10 min-h-[70vh]'>
-          <section className='w-full flex flex-col gap-8 justify-center'>
-            <h2 className='text-3xl mt-5 text-center'>Cities</h2>
+        <main className='flex flex-col py-10 min-h-[70vh]'>
+          <section className='w-full flex flex-col gap-5 justify-center'>
+            <h2 className='text-3xl'>Cities</h2>
             <search className='flex justify-center'>
               <input
               placeholder='Insert city name'

@@ -6,8 +6,8 @@ const Footer = () => {
     <>
         <footer className='flex flex-col items-center gap-5 p-9 border-t-2 border-black'>
             <nav className='p-1 flex gap-10'>
-                <Link className='text-xl hover:scale-95 text-black hover:text-gray-600 hover:bg-orange-400 p-2 px-8 border border-black' to="/">Home</Link>
-                <Link className='text-xl hover:scale-95 text-black hover:text-gray-600 hover:bg-orange-400 p-2 px-8 border border-black' to="/cities">Cities</Link>
+                <Link className='text-xl hover:scale-95 text-black hover:text-gray-600 hover:bg-blue-300 p-2 px-8 border border-black' to="/">Home</Link>
+                <Link className='text-xl hover:scale-95 text-black hover:text-gray-600 hover:bg-blue-300 p-2 px-8 border border-black' to="/cities">Cities</Link>
             </nav>
             <nav className='flex flex-wrap justify-center gap-10'>
               <a target='_blank' href="https://whatsapp.com"><i className='fa-brands fa-whatsapp scale-150 pr-[5px]'></i>Whatsapp</a>
