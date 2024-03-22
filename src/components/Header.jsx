@@ -62,7 +62,8 @@ const Header = () => {
                   <img className="w-10 mr-3" src="src/assets/login.png" alt="sign out button" />
                   Sign out
                 </button>
-            ) : <Link to={"/Login"} className="text-xl hover:scale-95 px-1 hover:text-blue-500/90">
+            ) : <Link to={"/Login"} className="text-xl flex items-center border border-black rounded-lg p-2 px-4 hover:scale-95 bg-blue-500 hover:text-blue-800">
+                  <img className="w-10 mr-3" src="src/assets/login.png" alt="sign out button" />
                 Sign in
                 </Link>
             }
